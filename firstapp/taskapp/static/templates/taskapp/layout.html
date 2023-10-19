@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tasks</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="{% static 'taskapp/task.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    body{
+        position: relative;
+        position: absolute;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        align-items: center;
+        background-color: black;
+        color: aliceblue;
+        left: 35%;
+    }
+    .task{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-grow: 2;
+        flex-basis: 200px;
+    }
+
+    .task .fa{
+        position: relative;
+        color: orange;
+        border-radius: 6px;
+        left: 10%;
+        font-size: 80px;
+        height: 10px;
+        
+    }
+
+    h1{
+        position: relative;
+        color:bisque;
+        right: 5%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h1:hover{
+        position: relative;
+        font-size: 20px;
+        left: 0%;
+        
+    }
+    .submit{
+        position: relative;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 6px;
+        background-color: aqua;
+        left : 20px;    
+
+    }
+    input{
+        position: relative;
+        padding: 4px;
+        border: none;
+        border-color: default_if_none;
+        border-radius:5px ;
+
+    }
+
+    a,button{
+        position: relative;
+        flex-direction: column;
+        background-color: aqua;
+        border: none;
+        padding: 4px;
+        margin: 6px;
+        border-radius: 5px;
+        text-decoration: none;
+       
+   }
+
+   button{
+    position: relative;
+    margin: 30px;
+    right: 15%;
+    justify-content: center;
+    place-items: center;
+   }
+
+   button.linked{
+    color: darkslateblue;
+   }
+
+</style>
+<body>
+    {% block  body%}
+    {% endblock  %}
+    
+</body>
+</html>

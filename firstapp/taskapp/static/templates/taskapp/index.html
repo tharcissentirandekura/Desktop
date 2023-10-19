@@ -1,0 +1,26 @@
+{% extends 'taskapp/layout.html' %}
+
+{% block  body%}
+    
+    <div class="task">
+        <h1>Tasks registered</h1>
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+    </div>
+        <ul>
+            {% for task in tasks%}
+                <li>{{task}}</li>
+            {% endfor %}
+        </ul>
+
+        
+   
+   
+
+
+    <button><a href="{% url 'taskapp:add' %}">Add</a></button>
+
+    <button><a href="{% url 'taskapp:remove' %}">Remove</a></button>
+
+    <button class="linked"><a href="https://tharcisse.netlify.app/">Visit me online</a></button>
+
+{% endblock body%}

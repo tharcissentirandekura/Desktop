@@ -1,0 +1,15 @@
+"""
+
+{% load static %}
+
+{% block body %}
+
+{% for music in musics %}  
+<audio controls>  
+    <source src="{% static 'startapp/'|add:music %}" type="audio/mpeg">
+</audio>  
+{% endfor %}  
+
+{% endblock  %}
+
+"""
